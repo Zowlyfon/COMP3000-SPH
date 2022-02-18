@@ -1,3 +1,5 @@
+#pragma once
+
 #include <cmath>
 
 struct Parameters {
@@ -5,6 +7,9 @@ struct Parameters {
 	float DomainY = 100.0f;
 	float DomainZ = 100.0f;
 	float MaxParticles = 65536;
+	float RestDensity = 1000.0f;
+	float GasConst = 100.0f;
+	float3 G = make_float3(0.0f, 0.0f, -9.8f);
 	float Mass = 6.25f;
 	float H = 2.4f;
 	float Visc = 10.0f;
@@ -13,14 +18,14 @@ struct Parameters {
 };
 
 struct Particles {
-	int numP;
-	int numCells;
-	float3* x;
-	float3* v;
-	float3* f;
-	float* p;
-	float* rho;
-	int* cells;
-	int* neighbourCells;
-	int* particleCellID;
+	int NumP;
+	int NumCells;
+	float3* X;
+	float3* V;
+	float3* F;
+	float* P;
+	float* Rho;
+	int* Cells;
+	int* NeighbourCells;
+	int* ParticleCellID;
 };
