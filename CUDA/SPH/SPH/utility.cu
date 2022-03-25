@@ -31,14 +31,14 @@ __device__ float3 operator*(const float b, const float3& a) {
     return make_float3(a.x * b, a.y * b, a.z * b);
 }
 
-__device__ int CalculateParticleCellID(Parameters Params, Particles* P) {
+__device__ int CalculateParticleCellID(Parameters Params, float3 Pos) {
     int numXCell = (Params.DomainX / Params.H) + 1;
     int numYCell = (Params.DomainY / Params.H) + 1;
     int numZCell = (Params.DomainZ / Params.H) + 1;
 
-    int xCell = P->X->x / Params.H;
-    int yCell = P->X->y / Params.H;
-    int zCell = P->X->z / Params.H;
+    int xCell = Pos.x / Params.H;
+    int yCell = Pos.y / Params.H;
+    int zCell = Pos.z / Params.H;
 
     return (((xCell * numYCell) + yCell) * numXCell) + zCell;
 }
