@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\COMP3000-SPH\\Simulation\\Source\\Simulation\\Simulation.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Source\\Simulation.Target.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Source\\SimulationEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

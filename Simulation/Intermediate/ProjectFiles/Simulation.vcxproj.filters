@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Simulation.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{D06133DA-1E03-453D-AAC4-5DB0048FFED7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Simulation.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SimulationEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{D5B8D0BB-CD8E-4C9A-B9D0-3CFCE0D19BBE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Simulation">
+      <UniqueIdentifier>{6D3593A1-CB3A-43F7-AFD0-C0F8F6C964B2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Simulation\Simulation.Build.cs">
+      <Filter>Source\Simulation</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Simulation\Simulation.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Simulation\Simulation.h">
+      <Filter>Source\Simulation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Simulation\SimulationGameModeBase.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Simulation\SimulationGameModeBase.h">
+      <Filter>Source\Simulation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Simulation\SPHController.cpp">
+      <Filter>Source\Simulation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Simulation\SPHController.h">
+      <Filter>Source\Simulation</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Simulation",
+			"Path": "E:\\COMP3000-SPH\\Simulation\\Source\\Simulation.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SimulationEditor",
+			"Path": "E:\\COMP3000-SPH\\Simulation\\Source\\SimulationEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
