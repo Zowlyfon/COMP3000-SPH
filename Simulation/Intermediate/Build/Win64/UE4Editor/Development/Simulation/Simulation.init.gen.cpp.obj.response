@@ -32,14 +32,24 @@
 /wd4244
 /wd4838
 /I .
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\Niagara
+/I ..\Plugins\FX\Niagara\Source
+/I ..\Plugins\FX\Niagara\Source\Niagara\Classes
+/I ..\Plugins\FX\Niagara\Source\Niagara\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
+/I Runtime\CoreUObject\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
+/I ThirdParty\Intel
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
+/I Runtime\MovieScene\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
+/I Runtime\InputCore\Classes
+/I Runtime\InputCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -49,9 +59,6 @@
 /I Runtime\Json\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore
 /I Runtime\SlateCore\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
-/I Runtime\InputCore\Classes
-/I Runtime\InputCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
 /I Runtime\Slate\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ImageWrapper
@@ -100,7 +107,6 @@
 /I Runtime\Experimental
 /I Runtime\Experimental\Chaos\Public
 /I Runtime\Experimental\ChaosCore\Public
-/I ThirdParty\Intel
 /I Runtime\Experimental\Voronoi\Public
 /I ThirdParty
 /I Runtime\SignalProcessing\Public
@@ -186,12 +192,10 @@
 /I Runtime\NetworkFileSystem\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
 /I Runtime\UMG\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieScene
-/I Runtime\MovieScene\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
-/I Runtime\TimeManagement\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
 /I Runtime\MovieSceneTracks\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\TimeManagement
+/I Runtime\TimeManagement\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
 /I Runtime\AnimationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
@@ -231,8 +235,21 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraCore
+/I ..\Plugins\FX\Niagara\Source\NiagaraCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\VectorVM
+/I Runtime\VectorVM\Public
+/I ..\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Inc\NiagaraShader
+/I ..\Plugins\FX\Niagara\Source\NiagaraShader\Public
+/I Developer\DerivedDataCache\Public
+/I Developer\DesktopPlatform\Public
+/I Runtime\Portal
+/I Runtime\Portal\LauncherPlatform\Public
+/I ..\Plugins\FX\Niagara\Source\NiagaraVertexFactories\Public
 /I E:\COMP3000-SPH\Simulation\Intermediate\Build\Win64\UE4Editor\Inc\Simulation
 /I E:\COMP3000-SPH\Simulation\Source
+/I E:\COMP3000-SPH\Simulation\CUDALib\include
+/I "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\include"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf

@@ -8,15 +8,82 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef SIMULATION_SPHController_generated_h
 #error "SPHController.generated.h already included, missing '#pragma once' in SPHController.h"
 #endif
 #define SIMULATION_SPHController_generated_h
 
-#define Simulation_Source_Simulation_SPHController_h_12_SPARSE_DATA
-#define Simulation_Source_Simulation_SPHController_h_12_RPC_WRAPPERS
-#define Simulation_Source_Simulation_SPHController_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define Simulation_Source_Simulation_SPHController_h_12_INCLASS_NO_PURE_DECLS \
+#define Simulation_Source_Simulation_SPHController_h_17_SPARSE_DATA
+#define Simulation_Source_Simulation_SPHController_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execUpdateCollisionBox); \
+	DECLARE_FUNCTION(execUpdateSpawnBox); \
+	DECLARE_FUNCTION(execUpdateDomainBox); \
+	DECLARE_FUNCTION(execGetCollisionBoxTransform); \
+	DECLARE_FUNCTION(execSetCollisionBoxTransform); \
+	DECLARE_FUNCTION(execGetCollisionBoxExtents); \
+	DECLARE_FUNCTION(execSetCollisionBoxExtents); \
+	DECLARE_FUNCTION(execGetSpawnBoxTransform); \
+	DECLARE_FUNCTION(execSetSpawnBoxTransform); \
+	DECLARE_FUNCTION(execGetSpawnBoxExtents); \
+	DECLARE_FUNCTION(execSetSpawnBoxExtents); \
+	DECLARE_FUNCTION(execGetDomainBoxExtents); \
+	DECLARE_FUNCTION(execSetDomainBoxExtents); \
+	DECLARE_FUNCTION(execGetH); \
+	DECLARE_FUNCTION(execSetH); \
+	DECLARE_FUNCTION(execGetGravityScale); \
+	DECLARE_FUNCTION(execSetGravityScale); \
+	DECLARE_FUNCTION(execGetGasConstant); \
+	DECLARE_FUNCTION(execSetGasConstant); \
+	DECLARE_FUNCTION(execGetRestDensity); \
+	DECLARE_FUNCTION(execSetRestDensity); \
+	DECLARE_FUNCTION(execGetViscosity); \
+	DECLARE_FUNCTION(execSetViscosity); \
+	DECLARE_FUNCTION(execGetParticleMass); \
+	DECLARE_FUNCTION(execSetParticleMass); \
+	DECLARE_FUNCTION(execGetNumP); \
+	DECLARE_FUNCTION(execUnpauseSimulation); \
+	DECLARE_FUNCTION(execPauseSimulation); \
+	DECLARE_FUNCTION(execStopSimulation); \
+	DECLARE_FUNCTION(execStartSimulation);
+
+
+#define Simulation_Source_Simulation_SPHController_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execUpdateCollisionBox); \
+	DECLARE_FUNCTION(execUpdateSpawnBox); \
+	DECLARE_FUNCTION(execUpdateDomainBox); \
+	DECLARE_FUNCTION(execGetCollisionBoxTransform); \
+	DECLARE_FUNCTION(execSetCollisionBoxTransform); \
+	DECLARE_FUNCTION(execGetCollisionBoxExtents); \
+	DECLARE_FUNCTION(execSetCollisionBoxExtents); \
+	DECLARE_FUNCTION(execGetSpawnBoxTransform); \
+	DECLARE_FUNCTION(execSetSpawnBoxTransform); \
+	DECLARE_FUNCTION(execGetSpawnBoxExtents); \
+	DECLARE_FUNCTION(execSetSpawnBoxExtents); \
+	DECLARE_FUNCTION(execGetDomainBoxExtents); \
+	DECLARE_FUNCTION(execSetDomainBoxExtents); \
+	DECLARE_FUNCTION(execGetH); \
+	DECLARE_FUNCTION(execSetH); \
+	DECLARE_FUNCTION(execGetGravityScale); \
+	DECLARE_FUNCTION(execSetGravityScale); \
+	DECLARE_FUNCTION(execGetGasConstant); \
+	DECLARE_FUNCTION(execSetGasConstant); \
+	DECLARE_FUNCTION(execGetRestDensity); \
+	DECLARE_FUNCTION(execSetRestDensity); \
+	DECLARE_FUNCTION(execGetViscosity); \
+	DECLARE_FUNCTION(execSetViscosity); \
+	DECLARE_FUNCTION(execGetParticleMass); \
+	DECLARE_FUNCTION(execSetParticleMass); \
+	DECLARE_FUNCTION(execGetNumP); \
+	DECLARE_FUNCTION(execUnpauseSimulation); \
+	DECLARE_FUNCTION(execPauseSimulation); \
+	DECLARE_FUNCTION(execStopSimulation); \
+	DECLARE_FUNCTION(execStartSimulation);
+
+
+#define Simulation_Source_Simulation_SPHController_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesASPHController(); \
 	friend struct Z_Construct_UClass_ASPHController_Statics; \
@@ -25,7 +92,7 @@ public: \
 	DECLARE_SERIALIZER(ASPHController)
 
 
-#define Simulation_Source_Simulation_SPHController_h_12_INCLASS \
+#define Simulation_Source_Simulation_SPHController_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesASPHController(); \
 	friend struct Z_Construct_UClass_ASPHController_Statics; \
@@ -34,7 +101,7 @@ public: \
 	DECLARE_SERIALIZER(ASPHController)
 
 
-#define Simulation_Source_Simulation_SPHController_h_12_STANDARD_CONSTRUCTORS \
+#define Simulation_Source_Simulation_SPHController_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ASPHController(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ASPHController) \
@@ -47,7 +114,7 @@ private: \
 public:
 
 
-#define Simulation_Source_Simulation_SPHController_h_12_ENHANCED_CONSTRUCTORS \
+#define Simulation_Source_Simulation_SPHController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ASPHController(ASPHController&&); \
@@ -58,28 +125,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ASPHController)
 
 
-#define Simulation_Source_Simulation_SPHController_h_12_PRIVATE_PROPERTY_OFFSET
-#define Simulation_Source_Simulation_SPHController_h_9_PROLOG
-#define Simulation_Source_Simulation_SPHController_h_12_GENERATED_BODY_LEGACY \
+#define Simulation_Source_Simulation_SPHController_h_17_PRIVATE_PROPERTY_OFFSET
+#define Simulation_Source_Simulation_SPHController_h_14_PROLOG
+#define Simulation_Source_Simulation_SPHController_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Simulation_Source_Simulation_SPHController_h_12_PRIVATE_PROPERTY_OFFSET \
-	Simulation_Source_Simulation_SPHController_h_12_SPARSE_DATA \
-	Simulation_Source_Simulation_SPHController_h_12_RPC_WRAPPERS \
-	Simulation_Source_Simulation_SPHController_h_12_INCLASS \
-	Simulation_Source_Simulation_SPHController_h_12_STANDARD_CONSTRUCTORS \
+	Simulation_Source_Simulation_SPHController_h_17_PRIVATE_PROPERTY_OFFSET \
+	Simulation_Source_Simulation_SPHController_h_17_SPARSE_DATA \
+	Simulation_Source_Simulation_SPHController_h_17_RPC_WRAPPERS \
+	Simulation_Source_Simulation_SPHController_h_17_INCLASS \
+	Simulation_Source_Simulation_SPHController_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Simulation_Source_Simulation_SPHController_h_12_GENERATED_BODY \
+#define Simulation_Source_Simulation_SPHController_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Simulation_Source_Simulation_SPHController_h_12_PRIVATE_PROPERTY_OFFSET \
-	Simulation_Source_Simulation_SPHController_h_12_SPARSE_DATA \
-	Simulation_Source_Simulation_SPHController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	Simulation_Source_Simulation_SPHController_h_12_INCLASS_NO_PURE_DECLS \
-	Simulation_Source_Simulation_SPHController_h_12_ENHANCED_CONSTRUCTORS \
+	Simulation_Source_Simulation_SPHController_h_17_PRIVATE_PROPERTY_OFFSET \
+	Simulation_Source_Simulation_SPHController_h_17_SPARSE_DATA \
+	Simulation_Source_Simulation_SPHController_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	Simulation_Source_Simulation_SPHController_h_17_INCLASS_NO_PURE_DECLS \
+	Simulation_Source_Simulation_SPHController_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -1,6 +1,11 @@
 {
 	"SourceFiles": [
 		"E:\\COMP3000-SPH\\Simulation\\Source\\Simulation\\Simulation.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Plugins\\Developer\\RiderLink\\Source\\RD\\RD.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Plugins\\Developer\\RiderLink\\Source\\RiderBlueprintExtension\\RiderBlueprintExtension.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Plugins\\Developer\\RiderLink\\Source\\RiderGameControlExtension\\RiderGameControlExtension.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Plugins\\Developer\\RiderLink\\Source\\RiderLink\\RiderLink.Build.cs",
+		"E:\\COMP3000-SPH\\Simulation\\Plugins\\Developer\\RiderLink\\Source\\RiderLoggingExtension\\RiderLoggingExtension.Build.cs",
 		"E:\\COMP3000-SPH\\Simulation\\Source\\Simulation.Target.cs",
 		"E:\\COMP3000-SPH\\Simulation\\Source\\SimulationEditor.Target.cs"
 	],

@@ -22,8 +22,9 @@ public class Simulation : ModuleRules
 		string CustomCudaLibLib = "CUDALib/lib";
 		
 		PublicIncludePaths.Add(Path.Combine(ProjectRootPath, CustomCudaLibInclude));
-		PublicAdditionalLibraries.Add(Path.Combine(ProjectRootPath, CustomCudaLibLib, "SPH_CUDA.cu.obj"));
-		PublicAdditionalLibraries.Add(Path.Combine(ProjectRootPath, CustomCudaLibLib, "SPH_CUDA_UTIL.cu.obj"));
+		PublicAdditionalLibraries.Add(Path.Combine(ProjectRootPath, CustomCudaLibLib, "SPH.device-link.obj"));
+		PublicAdditionalLibraries.Add(Path.Combine(ProjectRootPath, CustomCudaLibLib, "utility.cu.obj"));
+		PublicAdditionalLibraries.Add(Path.Combine(ProjectRootPath, CustomCudaLibLib, "sph.cu.obj"));
 
 		string CUDAPath = "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.4";
 		string CUDAInclude = "include";
