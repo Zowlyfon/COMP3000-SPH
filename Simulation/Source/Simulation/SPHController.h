@@ -25,6 +25,9 @@ public:
 	Parameters Params;
 	Particles P;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite);
+	int SimStepPerFrame = 3;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	bool SimShouldTick = false;
 

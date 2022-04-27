@@ -285,8 +285,12 @@ void ASPHController::Tick(float DeltaTime)
 		*/
 		Params.CollisionBox = FVectorToFloat3(CollisionBox->BoxExtents);
 		Params.CollisionBoxTransform = FVectorToFloat3(CollisionBox->BoxTransform);
-		PutParticlesInCells(Params, P);
-		SimStep(Params, P);
+		for (int i = 0; i < SimStepPerFrame; i++)
+		{
+			PutParticlesInCells(Params, P);
+			SimStep(Params, P);
+			cudaDeviceSynchronize();
+		}
 
 		ParticlePositions.Empty();
 

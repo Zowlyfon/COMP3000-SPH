@@ -504,7 +504,7 @@ void SimStep(Parameters Params, Particles P) {
 	if (Params.DoCollisions) {
 		ComputeCollisions << <NumBlocks, BlockSize >> > (Params, P);
 	}
-	CudaErrorCheck(cudaDeviceSynchronize());
+	//CudaErrorCheck(cudaDeviceSynchronize());
 }
 
 #ifndef NDEBUG
